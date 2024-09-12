@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bubble Game</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Gilroy";
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        
+      }
+      #main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background-color: #74e785;
+      }
+      #panel {
+        width: 80%;
+        height: 80%;
+        background-color: #dbdedc;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      #ptop {
+        padding: 0px 20%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #dbdedc;
+
+        width: 100%;
+        height: 100px;
+        background-color: #345639;
+      }
+      .elem {
+        display: flex;
+
+        align-items: center;
+        gap: 20px;
+      }
+      .box {
+        padding: 10px 20px;
+        background-color: bisque;
+        border-radius: 5px;
+        color: black;
+        font-weight: 600;
+        font-size: 25px;
+      }
+      #pbtm {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 100%;
+        height: calc(100% - 100px);
+        padding: 20px;
+      }
+      .bubble {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background-color: #345639;
+        border-radius: 50%;
+        color: antiquewhite;
+      }
+      .bubble:hover {
+        background-color: black;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div id="panel">
+        <div id="ptop">
+          <div class="elem">
+            <h2>Score</h2>
+            <div id="scoreVal" class="box">
+              
+            </div>
+          </div>
+          <div class="elem">
+            <h2>Hit</h2>
+            <div  id="hitVal" class="box">0</div>
+          </div>
+          <div class="elem">
+            <h2>Time</h2>
+
+            <div id="Time" class="box">60</div>
+          </div>
+        </div>
+        <div id="pbtm">
+          <div class="bubble"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="Q4.js"></script>
+  </body>
+</html>
